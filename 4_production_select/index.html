@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+</head>
+<body class="bg-slate-300">
+  <div class="w-[640px] flex h-screen items-center mx-auto">
+    <form class="flex flex-col space-y-3 w-full">
+      <label class="relative">
+        <input name="product" type="radio" class="peer hidden">
+        <dl class="p-4 border-2 border-slate-200 rounded bg-white peer-checked:border-slate-800">
+          <dt class="text-2xl font-semibold">Essential</dt>
+          <dd>200 GB of storage</dd>
+        </dl>
+        <span class="absolute bottom-3 right-3">$5 per month</span>
+        <svg class="invisible peer-checked:visible absolute top-3 right-3 h-6 w-6" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+        </svg>
+      </label>
+      <label class="relative">
+        <input name="product" type="radio" class="peer hidden">
+        <dl class="p-4 border-2 border-slate-200 rounded bg-white peer-checked:border-slate-800">
+          <dt class="text-2xl font-semibold">Pro</dt>
+          <dd>1 TB of storage</dd>
+        </dl>
+        <span class="absolute bottom-3 right-3">$10 per month</span>
+        <svg class="invisible peer-checked:visible absolute top-3 right-3 h-6 w-6" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+        </svg>
+      </label>
+      <label class="relative">
+        <input name="product" type="radio" class="peer hidden">
+        <dl class="p-4 border-2 border-slate-200 rounded bg-white peer-checked:border-slate-800">
+          <dt class="text-2xl font-semibold">Premium</dt>
+          <dd>2 TB of storage</dd>
+        </dl>
+        <span class="absolute bottom-3 right-3">$20 per month</span>
+        <svg class="invisible peer-checked:visible absolute top-3 right-3 h-6 w-6" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+          <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+        </svg>
+      </label>
+    </form>
+  </div>
+</body>
+</html>
