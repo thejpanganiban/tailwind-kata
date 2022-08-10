@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+  <title>Document</title>
+</head>
+<body class="bg-slate-300 flex items-center h-screen">
+  <div class="container-md mx-auto">
+    <!-- Top Section -->
+    <div class="mb-6">
+      <h1 class="text-3xl font-bold">Checkout</h1>
+      <sub class="text-xl">Choose the amount of storage that's right for you</sub>
+    </div>
+
+    <!-- Checkout Form -->
+    <form class="flex gap-x-6">
+      <!-- Text Inputs -->
+      <div class="w-full">
+        <input class="rounded w-full my-2 py-4 border-slate-400" type="text" placeholder="First Name">
+        <input class="rounded w-full my-2 py-4 border-slate-400" type="text" placeholder="Last Name">
+        <input class="rounded w-full my-2 py-4 border-slate-400" type="password" placeholder="Password">
+        <input class="rounded w-full my-2 py-4 border-slate-400" type="text" placeholder="Card Number">
+        <button class="rounded w-full bg-slate-800 py-4 text-slate-50">Create Account</button>
+      </div>
+
+      <!-- Checkbox Options -->
+      <div class="w-full flex flex-col gap-x-4">
+        <label class="relative my-2">
+          <input type="radio" name="storage" class="hidden peer">
+          <div class="absolute top-4 right-3 z-10 invisible peer-checked:visible">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+            </svg>
+          </div>
+          <div class="rounded border-2 w-full p-4 bg-white peer-checked:border-slate-800">
+            <div class="absolute right-2 bottom-2">
+              <span>$10 / month</span>
+            </div>
+            <h3 class="text-lg font-semibold text-slate-500">Essential</h3>
+            <sub class="text-lg"><span class="text-2xl font-bold">200 GB</span> of storage</sub>
+          </div>
+        </label>
+        <label class="relative my-2">
+          <input type="radio" name="storage" class="hidden peer">
+          <div class="absolute top-4 right-3 invisible peer-checked:visible">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+            </svg>
+          </div>
+          <div class="rounded border-2 w-full p-4 bg-white peer-checked:border-slate-800">
+            <div class="absolute right-2 bottom-2">
+              <span>$20 / month</span>
+            </div>
+            <h3 class="text-lg font-semibold text-slate-500">Pro</h3>
+            <sub class="text-lg"><span class="text-2xl font-bold">1 TB</span> of storage</sub>
+          </div>
+        </label>
+        <label class="relative my-2">
+          <input type="radio" name="storage" class="hidden peer">
+          <div class="absolute top-4 right-3 invisible peer-checked:visible">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+            </svg>
+          </div>
+          <div class="rounded border-2 w-full p-4 bg-white peer-checked:border-slate-800">
+            <div class="absolute right-2 bottom-2">
+              <span>$40 / month</span>
+            </div>
+            <h3 class="text-lg font-semibold text-slate-500">Premium</h3>
+            <sub class="text-lg"><span class="text-2xl font-bold">2 TB</span> of storage</sub>
+          </div>
+        </label>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
